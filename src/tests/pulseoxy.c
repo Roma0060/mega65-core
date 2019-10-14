@@ -12,7 +12,8 @@
 #define POKE(a,v) *((uint8_t *)a)=(uint8_t)v
 #define PEEK(a) ((uint8_t)(*((uint8_t *)a)))
 
-unsigned short i;
+
+
 
 struct dmagic_dmalist {
   // F018B format DMA request
@@ -128,6 +129,14 @@ unsigned long j;
 
 void main(void)
 {
+
+  //test skfsdjkfhasfaslhkjfasfhsafh
+
+  POKE(0xd02f,0xa5);
+  POKE(0xd02f,0x96);
+
+  POKE(0xd030,0xd3ff);
+
   // Fast CPU
   POKE(0,65);
 
@@ -181,3 +190,17 @@ void main(void)
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
